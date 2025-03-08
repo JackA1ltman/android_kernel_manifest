@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="aosp" fetch="https://android.googlesource.com/" />
-  <remote name="bruce" fetch="https://github.com/toraidl/" />
-  <remote name="github" fetch="https://github.com/" />
-  <remote name="statix" fetch="https://github.com/statix/" />
+  <remote name="aosp" 
+       fetch="https://android.googlesource.com/" />
+  <remote name="bruce" 
+       fetch="https://github.com/toraidl/" />
+  <remote name="github" 
+       fetch="https://github.com/" />
+  <remote name="statix" 
+       fetch="https://github.com/StatiXOS/"
+       revision="tm" />
 
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
@@ -45,9 +50,5 @@
            clone-depth="1" />
 
   <!-- AnyKernel3 -->
-  <project path="ak3"
-           name="mvaisakh/AnyKernel3"
-           remote="github"
-           revision="op9p"
-           clone-depth="1" />
+<project path="ak3" name="mvaisakh/AnyKernel3" remote="github" revision="op9p" clone-depth="1" />
 </manifest>
