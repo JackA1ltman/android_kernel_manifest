@@ -33,8 +33,8 @@
            path="temp/modules_devicetree"
            revision="oneplus/sm8350_u_14.0.0_oneplus9"
            remote="bruce" clone-depth="1">
-    <copyfile src="kernel/msm-5.4/techpack" dest="kernel/msm-5.4/techpack" />
-    <copyfile src="vendor" dest="vendor" />
+    <linkfile src="kernel/msm-5.4/techpack" dest="kernel/msm-5.4/techpack" />
+    <linkfile src="vendor" dest="vendor" />
   </project>
 
   <!-- Eva GCC -->
