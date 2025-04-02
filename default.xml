@@ -39,6 +39,11 @@
     <linkfile src="kernel/msm-5.4/techpack/display" dest="kernel/msm-5.4/techpack/display" />
     <linkfile src="kernel/msm-5.4/techpack/video" dest="kernel/msm-5.4/techpack/video" />
     <linkfile src="vendor" dest="vendor" />
+    <linkfile src="vendor/qcom/opensource/wlan/fw-api" dest="kernel/msm-5.4/drivers/staging/fw-api" />
+    <linkfile src="vendor/qcom/opensource/wlan/qcacld-3.0" dest="kernel/msm-5.4/drivers/staging/qcacld-3.0" />
+    <linkfile src="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" dest="kernel/msm-5.4/drivers/staging/qca-wifi-host-cmn" />
+    <linkfile src="vendor/qcom/opensource/wlan/utils" dest="kernel/msm-5.4/drivers/staging/utils" />
+
   </project>
 
   <!-- AnyKernel2 -->
