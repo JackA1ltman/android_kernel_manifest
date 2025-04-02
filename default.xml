@@ -6,9 +6,6 @@
        fetch="https://github.com/toraidl/" />
   <remote name="github" 
        fetch="https://github.com/" />
-  <remote name="statix" 
-       fetch="https://github.com/StatiXOS/"
-       revision="tm" />
 
   <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
@@ -33,7 +30,7 @@
            remote="bruce" clone-depth="1" />
 
   <project name="android_kernel_modules_and_devicetree_oneplus_sm8350"
-           path="temp/modules_devicetree"
+           path="modules_devicetree"
            revision="oneplus/sm8350_u_14.0.0_oneplus9"
            remote="bruce" clone-depth="1">
     <linkfile src="kernel/msm-5.4/techpack" dest="kernel/msm-5.4/techpack" />
