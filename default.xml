@@ -33,7 +33,11 @@
            path="modules_devicetree"
            revision="oneplus/sm8350_u_14.0.0_oneplus9"
            remote="bruce" clone-depth="1">
-    <linkfile src="kernel/msm-5.4/techpack" dest="kernel/msm-5.4/techpack" />
+    <linkfile src="kernel/msm-5.4/techpack/audio" dest="kernel/msm-5.4/techpack/audio" />
+    <linkfile src="kernel/msm-5.4/techpack/camera" dest="kernel/msm-5.4/techpack/camera" />
+    <linkfile src="kernel/msm-5.4/techpack/dataipa" dest="kernel/msm-5.4/techpack/dataipa" />
+    <linkfile src="kernel/msm-5.4/techpack/display" dest="kernel/msm-5.4/techpack/display" />
+    <linkfile src="kernel/msm-5.4/techpack/video" dest="kernel/msm-5.4/techpack/video" />
     <linkfile src="vendor" dest="vendor" />
   </project>
 
