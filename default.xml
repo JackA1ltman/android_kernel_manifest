@@ -24,20 +24,15 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" clone-depth="1" />  
 <!-- OnePlus 9 Series Kernel -->
-  <project name="android_kernel_oneplus_sm8350"
+  <project name="android_kernel_oppo_sm8350"
            path="kernel/msm-5.4"
-           revision="oneplus/sm8350_u_14.0.0_oneplus9"
+           revision="oneplus/sm8350v_15.0.0_oneplus9pro"
            remote="bruce" clone-depth="1" />
 
-  <project name="android_kernel_modules_and_devicetree_oneplus_sm8350"
+  <project name="android_kernel_modules_and_devicetree_oppo_sm8350"
            path="modules_devicetree"
-           revision="oneplus/sm8350_u_14.0.0_oneplus9"
+           revision="oplus/sm8350v_15.0.0_oneplus_9Pro"
            remote="bruce" clone-depth="1">
-    <linkfile src="kernel/msm-5.4/techpack/audio" dest="kernel/msm-5.4/techpack/audio" />
-    <linkfile src="kernel/msm-5.4/techpack/camera" dest="kernel/msm-5.4/techpack/camera" />
-    <linkfile src="kernel/msm-5.4/techpack/dataipa" dest="kernel/msm-5.4/techpack/dataipa" />
-    <linkfile src="kernel/msm-5.4/techpack/display" dest="kernel/msm-5.4/techpack/display" />
-    <linkfile src="kernel/msm-5.4/techpack/video" dest="kernel/msm-5.4/techpack/video" />
     <linkfile src="vendor" dest="vendor" />
     <linkfile src="vendor/qcom/opensource/wlan/fw-api" dest="kernel/msm-5.4/drivers/staging/fw-api" />
     <linkfile src="vendor/qcom/opensource/wlan/qcacld-3.0" dest="kernel/msm-5.4/drivers/staging/qcacld-3.0" />
@@ -46,6 +41,6 @@
 
   </project>
 
-  <!-- AnyKernel2 -->
-<project path="ak3" name="mvaisakh/AnyKernel3" remote="github" revision="op9p" clone-depth="1" />
+  <!-- AnyKernel3 -->
+<project path="ak3" name="AnyKernel3" remote="bruce" revision="op9pro" clone-depth="1" />
 </manifest>
