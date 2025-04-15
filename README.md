@@ -2,7 +2,7 @@
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/StatiXOS/android_kernel_manifest.git -b android-msm-lemonadep-5.4-android13
+repo init -u https://github.com/toraidl/android_kernel_manifest.git -b oneplus/sm8350v_15.0.0_oneplus9pro
 ```
 ## Sync Source ##
 ```bash
@@ -13,11 +13,3 @@ For Clang builds
 ```bash
 BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki LTO=full BUILD_KERNEL=1 build/build.sh
 ```
-
-For GCC builds
-```bash
-BUILD_CONFIG=kernel/msm-5.4/build.config.msm.lahaina VARIANT=qgki COMPILER=gcc BUILD_KERNEL=1 build/build.sh
-```
-### Submitting Patches ###
-
-Please refer to this for submitting patches: https://github.com/StatiXOS/android_manifest#submitting-patches
