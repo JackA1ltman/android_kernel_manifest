@@ -2,8 +2,8 @@
 <manifest>
   <remote name="aosp" 
        fetch="https://android.googlesource.com/" />
-  <remote name="bruce" 
-       fetch="https://github.com/toraidl/" />
+  <remote name="tqmane" 
+       fetch="https://github.com/tqmane/" />
   <remote name="github" 
        fetch="https://github.com/" />
 
@@ -27,12 +27,12 @@
   <project name="android_kernel_oppo_sm8350"
            path="kernel/msm-5.4"
            revision="oneplus/sm8350v_15.0.0_oneplus9pro"
-           remote="bruce" clone-depth="1" />
+           remote="tqmane" clone-depth="1" />
 
   <project name="android_kernel_modules_and_devicetree_oppo_sm8350"
            path="modules_devicetree"
            revision="oplus/sm8350v_15.0.0_oneplus_9Pro"
-           remote="bruce" clone-depth="1">
+           remote="tqmane" clone-depth="1">
     <linkfile src="vendor" dest="vendor" />
     <linkfile src="vendor/qcom/opensource/wlan/fw-api" dest="kernel/msm-5.4/drivers/staging/fw-api" />
     <linkfile src="vendor/qcom/opensource/wlan/qcacld-3.0" dest="kernel/msm-5.4/drivers/staging/qcacld-3.0" />
@@ -42,5 +42,5 @@
   </project>
 
   <!-- AnyKernel3 -->
-<project path="ak3" name="AnyKernel3" remote="bruce" revision="op9pro" clone-depth="1" />
+<project path="ak3" name="AnyKernel3" remote="tqmane" revision="op9pro" clone-depth="1" />
 </manifest>
