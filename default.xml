@@ -2,8 +2,8 @@
 <manifest>
   <remote name="aosp" 
        fetch="https://android.googlesource.com/" />
-  <remote name="Chippa-a"
-       fetch="https://github.com/Chippa-a/" />
+  <remote name="JackA1ltman"
+       fetch="https://github.com/JackA1ltman/" />
   <remote name="tqmane"
           fetch="https://github.com/tqmane/" />
   <remote name="github" 
@@ -29,12 +29,12 @@
   <project name="android_kernel_oneplus_sm8350"
            path="kernel/msm-5.4"
            revision="oneplus/sm8350_b_16.0.0_oneplus9rt"
-           remote="Chippa-a" clone-depth="1" />
+           remote="JackA1ltman" clone-depth="1" />
 
   <project name="android_kernel_modules_and_devicetree_oneplus_sm8350"
            path="modules_devicetree"
            revision="oneplus/sm8350_b_16.0.0_oneplus9rt"
-           remote="Chippa-a" clone-depth="1">
+           remote="JackA1ltman" clone-depth="1">
     <linkfile src="vendor" dest="vendor" />
     <linkfile src="vendor/qcom/opensource/wlan/fw-api" dest="kernel/msm-5.4/drivers/staging/fw-api" />
     <linkfile src="vendor/qcom/opensource/wlan/qcacld-3.0" dest="kernel/msm-5.4/drivers/staging/qcacld-3.0" />
