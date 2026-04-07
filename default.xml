@@ -2,12 +2,14 @@
 <manifest>
   <remote name="aosp" 
        fetch="https://android.googlesource.com/" />
-  <remote name="tqmane" 
-       fetch="https://github.com/tqmane/" />
+  <remote name="Chippa-a"
+       fetch="https://github.com/Chippa-a/" />
+  <remote name="tqmane"
+          fetch="https://github.com/tqmane/" />
   <remote name="github" 
        fetch="https://github.com/" />
 
-  <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
+  <default revision="master-kernel-build-2024" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android11-5.4-lts" />
 
@@ -24,15 +26,15 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" clone-depth="1" />  
 <!-- OnePlus 9 Series Kernel -->
-  <project name="android_kernel_oppo_sm8350"
+  <project name="android_kernel_oneplus_sm8350"
            path="kernel/msm-5.4"
-           revision="oneplus/sm8350v_15.0.0_oneplus9pro"
-           remote="tqmane" clone-depth="1" />
+           revision="oneplus/sm8350_b_16.0.0_oneplus9rt"
+           remote="Chippa-a" clone-depth="1" />
 
-  <project name="android_kernel_modules_and_devicetree_oppo_sm8350"
+  <project name="android_kernel_modules_and_devicetree_oneplus_sm8350"
            path="modules_devicetree"
-           revision="oplus/sm8350v_15.0.0_oneplus_9Pro"
-           remote="tqmane" clone-depth="1">
+           revision="oneplus/sm8350_b_16.0.0_oneplus9rt"
+           remote="Chippa-a" clone-depth="1">
     <linkfile src="vendor" dest="vendor" />
     <linkfile src="vendor/qcom/opensource/wlan/fw-api" dest="kernel/msm-5.4/drivers/staging/fw-api" />
     <linkfile src="vendor/qcom/opensource/wlan/qcacld-3.0" dest="kernel/msm-5.4/drivers/staging/qcacld-3.0" />
