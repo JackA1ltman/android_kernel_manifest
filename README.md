@@ -2,7 +2,7 @@
 
 ## Repo Init ##
 ```bash
-repo init -u https://github.com/tqmane/android_kernel_manifest.git -b oneplus/sm8350v_15.0.0_oneplus9pro
+repo init -u https://github.com/JackA1ltman/android_kernel_manifest.git -b oneplus/sm8350_b_16.0.0_oneplus9rt
 ```
 ## Sync Source ##
 ```bash
