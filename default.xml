@@ -9,7 +9,7 @@
   <remote name="github" 
        fetch="https://github.com/" />
 
-  <default revision="master-kernel-build-2024" remote="aosp" sync-j="4" />
+  <default revision="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
   <superproject name="kernel/superproject" remote="aosp" revision="common-android11-5.4-lts" />
 
